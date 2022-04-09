@@ -1,0 +1,9 @@
+{
+    "id": "01F0X3MJP3235FDNQE80XJ9V1Q",
+    "date": "2021-03-15T19:36:19.998319",
+    "author": {
+        "name": "Iiro Krankka",
+        "website": "https://welcomments.io"
+    },
+    "message": "Hey there!\n\nThese comments are powered by Welcomments, and they are **fully static prebuilt HTML**.\n\nThey are stored as JSON files in a GitHub repository. Whenever there’s a new change in the GitHub repository, Netlify runs a new Jekyll build that crunches all the articles and comments into beautiful static HTML.\n\nHere's how to get started:\n1. Go to [console.welcomments.io](https://console.welcomments.io/).\n2. Connect your GitHub repository.\n3. Copy your _website id_ from the settings page.\n4. In `_config.yml`, replace `<YOUR-WEBSITE-ID-HERE>` with the website id you just copied.\n5. Push these changes to your GitHub repository and wait for the Netlify build to finish.\n\nIf you have any questions, feel free to reach out to [hello@welcomments.io](mailto:hello@welcomments.io) anytime! :-)"
+}
