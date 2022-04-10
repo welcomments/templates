@@ -29,10 +29,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
-# This is the Welcomments specific configuration for your site.
-welcomments:
-  website_id: YOUR-WEBSITE-ID-HERE
-
 # Build settings
 theme: minima
 plugins:

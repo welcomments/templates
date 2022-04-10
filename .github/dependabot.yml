@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/eleventy"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "@11ty/*"
+  - package-ecosystem: "bundler"
+    directory: "/jekyll"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "jekyll"
