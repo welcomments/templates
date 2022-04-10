@@ -1,10 +1,10 @@
 # Pull request description templates
 
-Here you will find the [Embedded Elixir](https://hexdocs.pm/eex/1.12.3/EEx.html) files that are used for the description of the automatically created GitHub pull request that integrates Welcomments to your GitHub repository.
+Here you will find the Markdown files that are used for the description of the automatically created GitHub pull request that integrates Welcomments to your GitHub repository.
 
-The `common.md.eex` file defines the structure for the pull request description. Because the configuration for the static site generators differs from each other, there are also `<static site generator name>.md.eex` files that have instructions for each specific static site generator.
+The `common.md` file defines the structure for the pull request description. Because the configuration for the static site generators differs from each other, there are also `<static site generator name>.md` files that have instructions for each specific static site generator.
 
-There are a handful of variables, denoted by `<%= variable_name %>` that will be dynamically replaced in the `.md.eex` files with appropriate values.
+There are a handful of variables, denoted by `<%= variable_name %>` that will be dynamically replaced in the `.md` files with appropriate values.
 
 Available variable substitutions:
 
