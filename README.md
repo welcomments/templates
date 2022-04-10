@@ -4,9 +4,7 @@ This repository contains sample Welcomments integrations for various static site
 
 ## No but really, what is this stuff?
 
-Welcomments is a comment system for static site generator based websites that pre-renders visitor comments in 100% static, prebuilt HTML.
-
-[The Welcomments website](https://welcomments.io/) has a quick run-through how Welcomments works. And [here's a YouTube video](https://www.youtube.com/watch?v=AIG7LTOrd1Q) that shows how to integrate Welcomments to a Hugo website from scratch in 1 minute and 54 seconds.
+Welcomments is a comment system for static site generator based websites that pre-renders visitor comments in 100% static, prebuilt HTML. [The Welcomments website](https://welcomments.io/) has a quick run-through how Welcomments works. And [here's a YouTube video](https://www.youtube.com/watch?v=AIG7LTOrd1Q) that shows how to integrate Welcomments to a Hugo website from scratch in 1 minute and 54 seconds.
 
 The templates in this Git repository are complete sample projects that have Welcomments already integrated. This means that if you want to see the Welcomments Jekyll integration in action, you can do `cd jekyll && bundle install && jekyll serve`.
 
@@ -22,14 +20,9 @@ There are a handful of variables, denoted by `<%= variable_name %>` that will be
 
 Available variable substitutions:
 
-<%= branch_name %>
-: The name of the Welcomments integration Git branch.
-
-<%= specific_instructions %>
-: The instructions specific for a single static site generator, such as Jekyll.
-
-<%= website_id %>
-: The unique identifier for the website (generated in the Welcomments console) that identifies the website where all reader comments will be delivered to.
+- **branch_name**: The name of the Welcomments integration Git branch.
+- **specific_instructions**: The instructions specific for a single static site generator, such as Jekyll.
+- **website_id**: The unique identifier for the website (generated in the Welcomments console) that identifies the website where all reader comments will be delivered to.
 
 ## Used versions
 
