@@ -1,4 +1,4 @@
-The Hugo template is tested with Hugo 0.64.0.
+The Hugo template is tested with Hugo 0.96.0.
 
 **If you're using Netlify**, set HUGO_VERSION to 0.64.0 or higher in the environment variables section of your Netlify site.
 
