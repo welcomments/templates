@@ -15,12 +15,22 @@ module.exports = function (eleventyConfig) {
   // Welcomments configuration
   const absoluteUrl = "https://<YOUR WEBSITE HERE>";
   eleventyConfig.addFilter("absoluteUrl", (path) => `${absoluteUrl}${path}`);
-  eleventyConfig.addFilter("objectValues", (object) => object ? Object.values(object) : []);
-  eleventyConfig.addFilter("whereUnset", (array, key) => array.filter(item => !item[key] || item[key] === ""));
-  eleventyConfig.addFilter("where", (array, key, value) => array.filter(item => item[key] === value));
+  eleventyConfig.addFilter("objectValues", (object) =>
+    object ? Object.values(object) : []
+  );
+  eleventyConfig.addFilter("whereUnset", (array, key) =>
+    array.filter((item) => !item[key] || item[key] === "")
+  );
+  eleventyConfig.addFilter("where", (array, key, value) =>
+    array.filter((item) => item[key] === value)
+  );
   eleventyConfig.addFilter("interpolate", (a, b) => `${a}${b}`);
-  eleventyConfig.addFilter("markdownify", (value) => markdownLibrary.render(value));
-  eleventyConfig.addFilter("sortBy", (array, key) => array.slice().sort((a, b) => a[key] - b[key]));
+  eleventyConfig.addFilter("markdownify", (value) =>
+    markdownLibrary.render(value)
+  );
+  eleventyConfig.addFilter("sortBy", (array, key) =>
+    array.slice().sort((a, b) => a[key] - b[key])
+  );
 };
 ```
 
@@ -29,12 +39,13 @@ It's important to replace `<YOUR WEBSITE HERE>` with the url of your production 
 Then, add the following snippet to your _post template file_.
 
 ```
-{% set welcomments_config = {welcomments: welcomments, website_id: "YOUR-WEBSITE-ID-HERE"} %}
+{% set welcomments_config = {welcomments: welcomments, website_id: "<%= website_id %>"} %}
 {% renderFile "./_includes/welcomments/comments.liquid", welcomments_config %}
 ```
 
 The location of this file can differ based on the Eleventy starter you're using.
 
 Here are some examples where this file could be:
-* `_includes/layouts/post.njk`
-* `_includes/post.liquid`
+
+- `_includes/layouts/post.njk`
+- `_includes/post.liquid`
